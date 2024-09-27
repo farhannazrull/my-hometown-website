@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile - Mohammad Farhan Nazrul Ilhami</title>
+    <title>Tourist Places - Banyuwangi</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -18,79 +18,56 @@
             padding: 0;
             background-color: #f8f9fa;
             position: relative;
-            overflow-x: hidden;
         }
 
-        /* Background dots pattern */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: radial-gradient(#bbb 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.3;
-            z-index: -1;
-        }
-
-        .profile-container {
+        .tourist-container {
             margin-top: 100px;
+            padding: 20px;
         }
 
-        .profile-photo {
-            width: 250px;
-            height: auto; /* Maintain aspect ratio */
-            object-fit: cover;
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .bio-data {
+        .tourist-description {
             background-color: #ffffff;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
-        .bio-data h2 {
+        .tourist-description h2 {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
 
-        .bio-data .row {
-            margin-bottom: 15px;
+        .top-tourist {
+            margin-top: 40px;
         }
 
-        .bio-data .data-row {
-            padding: 15px;
-            background-color: #f1f1f1;
-            border-radius: 8px;
-            margin-bottom: 15px; /* Space between each row */
+        .tourist-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
 
-        .about-me {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .about-me h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
+        .tourist-item img {
+            width: 120px; /* Adjust width */
+            height: 120px; /* Adjust height */
+            border-radius: 15px; /* Rounded corners */
+            margin-right: 20px; /* Spacing between image and text */
         }
 
         @media (max-width: 768px) {
-            .profile-photo {
-                margin: 0 auto 20px; /* Center the photo for smaller screens */
+            .tourist-item {
+                flex-direction: column; /* Stack items on smaller screens */
+                align-items: flex-start;
+            }
+
+            .tourist-item img {
+                margin-bottom: 15px; /* Spacing below image */
             }
         }
     </style>
@@ -115,46 +92,42 @@
         </div>
     </nav>
 
-    <!-- Profile Section -->
-    <div class="container profile-container">
-        <div class="row">
-            <div class="col-md-4 text-center text-md-start">
-                <img src="Pasfoto-Mohammad Farhan Nazrul Ilhami.jpg" alt="Profile Photo" class="profile-photo">
-            </div>
-            <div class="col-md-8">
-                <!-- About Me Section -->
-                <div class="about-me">
-                    <h2>About Me</h2>
-                    <p>Hello! I am Mohammad Farhan Nazrul Ilhami, a student of Informatics Engineering at ITS. I am passionate about software development and creating digital solutions to solve everyday problems. I enjoy working on projects that challenge me to think creatively and find innovative approaches to improve user experiences. Outside of coding, I love participating in choir and playing music. I always aim to contribute to the tech community and aspire to make an impact with my work.</p>
-                </div>
+    <!-- Tourist Places Section -->
+    <div class="container tourist-container">
 
-                <!-- Biodata Section -->
-                <div class="bio-data">
-                    <h2>Biodata</h2>
-                    <div class="data-row">
-                        <strong>Full Name</strong>
-                        <span>Mohammad Farhan Nazrul Ilhami</span>
-                    </div>
-                    <div class="data-row">
-                        <strong>NRP</strong>
-                        <span>5025231053</span>
-                    </div>
-                    <div class="data-row">
-                        <strong>Department</strong>
-                        <span>Informatics Engineering</span>
-                    </div>
-                    <div class="data-row">
-                        <strong>University</strong>
-                        <span>Institut Teknologi Sepuluh Nopember (ITS)</span>
-                    </div>
-                    <div class="data-row">
-                        <strong>Hometown</strong>
-                        <span>Banyuwangi, East Java</span>
-                    </div>
-                    <div class="data-row">
-                        <strong>Hobbies</strong>
-                        <span>Software Development, Choir, Music</span>
-                    </div>
+        <h2><strong>Tourist Places in Banyuwangi</strong></h2>
+        
+        <div class="tourist-description">
+            <p>Banyuwangi is blessed with stunning natural beauty and rich cultural heritage, making it a top destination for travelers. One of the most iconic places to visit is <strong>Ijen Crater</strong>, famous for its turquoise sulfur lake and mesmerizing blue flames that attract adventurers from around the world. This natural wonder offers breathtaking views, especially at sunrise.</p>
+            <p>Another must-see is <strong>Baluran National Park</strong>, known as the "Africa van Java" due to its savannah landscape and diverse wildlife. Visitors can explore the park's various ecosystems, including mangroves, forests, and coral reefs, while spotting animals like deer and various bird species.</p>
+            <p>For a cultural experience, the <strong>Blambangan Cultural Park</strong> showcases the rich history of Banyuwangi. Here, visitors can enjoy traditional dances, music performances, and local art exhibitions, providing a glimpse into the region's vibrant culture and traditions.</p>
+        </div>
+
+        <!-- Top 3 Tourist Places Section -->
+        <div class="top-tourist">
+            <h2><strong>Top 3 Tourist Places</strong></h2>
+
+            <div class="tourist-item">
+                <img src="ijen.webp" alt="Ijen Crater">
+                <div>
+                    <h4>1. Ijen Crater</h4>
+                    <p>Ijen Crater is famous for its stunning blue flames and turquoise sulfur lake. It's a popular hiking destination offering breathtaking views, especially at sunrise.</p>
+                </div>
+            </div>
+
+            <div class="tourist-item">
+                <img src="park.jpg" alt="Baluran National Park">
+                <div>
+                    <h4>2. Baluran National Park</h4>
+                    <p>Baluran National Park is home to diverse wildlife and beautiful landscapes. Visitors can explore savannahs, forests, and enjoy wildlife spotting.</p>
+                </div>
+            </div>
+
+            <div class="tourist-item">
+                <img src="park2.jpg" alt="Blambangan Cultural Park">
+                <div>
+                    <h4>3. Blambangan Cultural Park</h4>
+                    <p>Blambangan Cultural Park showcases Banyuwangi's rich history through traditional dances, music, and art exhibitions. It's a great place to experience local culture.</p>
                 </div>
             </div>
         </div>
@@ -162,7 +135,7 @@
 
     <!-- Footer -->
     <footer class="text-center mt-5">
-        <p>&copy; 2024 Profile Page | Mohammad Farhan Nazrul Ilhami</p>
+        <p>&copy; 2024 Tourist Places Page | Banyuwangi</p>
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
